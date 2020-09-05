@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.luv2code.springboot.cruddemo.CruddemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.337 s <<< FAILURE! - in com.luv2code.springboot.cruddemo.CruddemoApplicationTests
+initializationError(com.luv2code.springboot.cruddemo.CruddemoApplicationTests)  Time elapsed: 0.012 s  <<< ERROR!
+java.lang.Exception: No runnable methods
+
