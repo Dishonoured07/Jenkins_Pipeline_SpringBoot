@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('Git pull'){
             steps{
-                git 'https://github.com/Dishonoured07/Jenkins_SpringBoot'
+                git 'https://github.com/Dishonoured07/Jenkins_Pipeline_SpringBoot'
         
                 
             }
@@ -29,7 +29,7 @@ pipeline {
             
                echo 'Building ...' 
                 withEnv(['JENKINS_NODE_COOKIE=DontKillME']){
-                sh 'START java -jar /var/jenkins_home/workspace/Jenkins_Pipeline_SpringBoot@2/target/spring-boot-mysql-2.jar > /var/jenkins_home/workspace/Jenkins_Pipeline_SpringBoot@2/jenkinsmavenlog.txt'
+                sh 'java -jar /var/jenkins_home/workspace/Jenkins_Pipeline_SpringBoot@2/target/spring-boot-mysql-2.jar > /var/jenkins_home/workspace/Jenkins_Pipeline_SpringBoot@2/jenkinsmavenlog.txt'
                 }
                      
                 
