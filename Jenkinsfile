@@ -29,7 +29,7 @@ pipeline {
             
                echo 'Building ...' 
                 withEnv(['JENKINS_NODE_COOKIE=DontKillME']){
-                sh 'java -jar /var/jenkins_home/workspace/Jenkins_Pipeline_SpringBoot@2/target/spring-boot-mysql-2.jar > /var/jenkins_home/workspace/Jenkins_Pipeline_SpringBoot@2/jenkinsmavenlog.txt'
+                sh 'java -jar /var/jenkins_home/workspace/Jenkins_Pipeline_SpringBoot/target/spring-boot-mysql-2.jar'
                 }
                      
                 
